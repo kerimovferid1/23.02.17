@@ -1,0 +1,65 @@
+
+div {
+    width: 30px;
+    height: 50px;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 1.5s infinite;
+  
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {
+	-webkit-animation-timing-function: linear;
+}
+#div2 {
+	-webkit-animation-timing-function: ease;
+}
+#div3 {
+	-webkit-animation-timing-function: ease-in;
+}
+#div4 {
+	-webkit-animation-timing-function: ease-out;
+}
+#div5 {
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+/* Standard syntax */
+#div1 {
+	animation-timing-function: linear;
+}
+#div2 {
+	animation-timing-function: ease;
+}
+#div3 {
+	animation-timing-function: ease-in;
+}
+#div4 {
+	animation-timing-function: ease-out;
+}
+#div5 {
+	animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 500px;}
+}
+.inline-blok{
+	display: inline-block;
+}
+img{
+	width: 100%;
+}
+.width-960{
+	width: 1120px;
+	margin: 0 auto;
+}
